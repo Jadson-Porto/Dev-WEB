@@ -1,29 +1,29 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1c1c1c; /* Fundo preto */
-    margin: 0%; /*o margin serve para */
-    color: #fffcfc; /* Texto branco */
+    background-color: #1c1c1c; 
+    margin: 0%; 
+    color: #fffcfc; 
 }
 
-h2 { /*Minhas Habilidades*/
+h2 { 
     text-align: center;
     font-size: 2.7rem;
     margin-bottom: 1rem;
-    color: wheat; /*Minhas Habilidades*/
+    color: wheat;
     gap: 5px;
 }
 
-p { /*Tenho experiência .....*/
+p { 
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #fffcfc; /* Bege para o texto */
+    color: #fffcfc; 
 }
 
-/* habilidades-container HTML */
+
 .habilidades {
-    background-color: #2d2d2d; /* Fundo cinza escuro */
+    background-color: #2d2d2d; 
     padding: 4rem 2rem;
     margin: 2rem auto;
     border-radius: 15px;
@@ -32,7 +32,7 @@ p { /*Tenho experiência .....*/
 }
 
 .habilidades-container {
-    display: flex; /*Este faz os quadrados um do lado do outro*/
+    display: flex; 
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1rem;
@@ -55,23 +55,35 @@ p { /*Tenho experiência .....*/
 
 .habilidade i {
     font-size: 4rem;
-    color: wheat; /* Bege  para os títulos */
+    color: wheat; 
     margin-bottom: 2rem;
 }
 
 .habilidade h3 {
     font-size: 1.8rem;
-    color: wheat; /* Bege  para os títulos */
+    color: wheat; 
     margin-bottom: 0.5rem;
 }
 
 .habilidade p {
     font-size: 1rem;
-    color: #fffcfc; /* Bege para o texto */
+    color: #fffcfc; 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
+    .habilidades-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .habilidade {
+        width: 90%;
+        margin-bottom: 2rem;
+        margin-left: -5%;
+    }
+}
+
+@media (max-width: 400px) {
     .habilidades-container {
         flex-direction: column;
         align-items: center;
@@ -91,6 +103,7 @@ footer {
       position: relative;
       bottom: 0;
       width: 100%;
+      margin-top: 4%;
 }
 
 footer p {
@@ -121,8 +134,8 @@ header{
 .menu {
     display: flex;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr); /* 4 colunas */
-    padding: 10px;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 20px;
     border-radius: 10px;
   }
   
@@ -135,8 +148,7 @@ header{
     font-weight: bold;
     text-align: center;
     margin: 0;
-    margin-left: 7%;
-    margin-right: 8%;
+    margin-left: 2%;
   }
   
   .menu-item:hover {
