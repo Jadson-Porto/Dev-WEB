@@ -12,6 +12,10 @@ body {
     background: linear-gradient(to top, #121212, #333);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 .header {
     position: relative;
